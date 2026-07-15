@@ -1,0 +1,30 @@
+@use '../core/media';
+@use '../core/spacing';
+
+.PreviewSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.PreviewSection__Big {
+	width: 100%;
+	min-height: 320px;
+	padding: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 18px;
+	background: radial-gradient(circle at top, rgba(255, 255, 255, 0.06), transparent 70%), #060606;
+	border: 1px solid rgba(#fff, 0.08);
+
+	canvas {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		width: auto;
+		height: auto;
+		border-radius: 12px;
+	}
+}

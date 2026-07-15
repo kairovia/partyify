@@ -1,0 +1,26 @@
+@use '../core/colours';
+@use '../core/type';
+@use '../core/spacing';
+
+.Footer {
+	margin-top: 44px;
+	padding-top: 24px;
+	border-top: 1px solid rgba(#fff, 0.1);
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: rgba(#fff, 0.7);
+}
+
+.Footer__Paragraph {
+	margin-bottom: 10px;
+}
+
+.Footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.Footer__Icon {
+	width: 1em;
+	height: auto;
+}

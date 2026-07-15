@@ -1,0 +1,19 @@
+.FileSelector {
+	display: inline-flex;
+	align-items: center;
+}
+
+.FileSelector__Input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+}
+
+.FileSelector__Label {
+	min-width: 176px;
+	justify-content: center;
+	padding-inline: 20px;
+}

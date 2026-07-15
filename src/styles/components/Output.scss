@@ -1,0 +1,18 @@
+@use '../core/spacing';
+
+.Output {
+	margin-top: 8px;
+	padding: 22px;
+	border: 1px solid rgba(#fff, 0.08);
+	border-radius: 22px;
+	background: rgba(255, 255, 255, 0.03);
+	line-height: 1.75;
+}
+
+.Output__Image {
+	display: block;
+	width: 100%;
+	margin: 12px 0 0;
+	border-radius: 16px;
+	border: 1px solid rgba(#fff, 0.08);
+}

@@ -1,0 +1,31 @@
+@use '../core/colours';
+@use '../core/type';
+
+.Root {
+	min-height: 100vh;
+	background: #050505;
+	color: #f5f5f5;
+}
+
+html,
+body,
+#root {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	background: #050505;
+	color: #f5f5f5;
+}
+
+html {
+	font-family: type.$familyBody;
+	font-size: type.$baseSize;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}

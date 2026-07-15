@@ -1,0 +1,42 @@
+@use '../core/colours';
+@use '../core/type';
+
+.Button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 13px 20px;
+	border: 1px solid rgba(#fff, 0.9);
+	border-radius: 999px;
+	background: #fff;
+	color: #050505;
+	font-family: type.$familyBody;
+	font-weight: 700;
+	font-size: 0.95rem;
+	line-height: 1.2;
+	cursor: pointer;
+	transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+
+	&:hover,
+	&:focus-visible {
+		transform: translateY(-1px);
+		box-shadow: 0 12px 34px rgba(0, 0, 0, 0.3);
+	}
+
+	&:active {
+		transform: none;
+	}
+
+	&:focus-visible {
+		outline: none;
+		box-shadow: 0 0 0 2px rgba(#fff, 0.25), 0 10px 30px rgba(0, 0, 0, 0.24);
+	}
+}
+
+.Button--secondary {
+	color: #fff;
+	border-color: rgba(#fff, 0.35);
+	background: rgba(#fff, 0.08);
+	box-shadow: none;
+}
